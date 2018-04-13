@@ -95,7 +95,6 @@ ps axu | grep <название процесса или программы>
 kill <id процесса>
 
 
-
 ### Установка React JS
 $ npm config set prefix /usr/local
 $ sudo npm install -g create-react-app
