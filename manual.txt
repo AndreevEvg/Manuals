@@ -1,0 +1,103 @@
+###СОЗДАНИЕ ВИРТУАЛЬНОГО ХОСТА
+
+Создайте новую папку для нашего виртуального хоста:
+sudo mkdir /var/www/test.site
+
+Дадим права на доступ:
+sudo chmod -R 777 /var/www
+
+Необходимо создать небольшой файл, index.html, чтобы он открылся когда вы откроете этот сайт:
+sudo vim /var/www/test.site/public_html/index.html
+
+Теперь можно добавлять виртуальный хост, для этого создайте файл и наполните его содержимым:
+sudo vim /etc/apache2/sites-available/test.site.conf
+<VirtualHost *:80>
+ServerName test.site
+ServerAlias www.test.site
+ServerAdmin webmaster@localhost
+DocumentRoot /var/www/test.site/public_html
+ErrorLog ${APACHE_LOG_DIR}/error.log
+CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+Теперь сохраните файл, далее нужно активировать наш хост:
+sudo a2ensite test.site.conf
+
+Перезапускаем веб сервер:
+sudo service apache2 restart
+
+Теперь необходимо завернуть трафик с этого домена на локальный сервер, для этого добавьте строчку в /ETC/HOSTS:
+sudo vim /etc/hosts
+127.0.0.1 test.site
+
+
+
+
+
+
+
+### Архивирование tar
+tar cf file.tar file
+tar cvf file.tar file
+
+### Разархивирование tar
+tar xf file.tar
+tar xvf file.tar
+
+
+### Разархивирование rar
+sudo unrar e файл.rar
+
+
+### Как установить PhpMyAdmin в Ubuntu 16.04. Подробная инструкция с решением проблем
+https://freshnotes.ru/2016/04/kak-ustanovit-phpmyadmin-v-ubuntu-16-04-podrobnaya-instrukciya-s-resheniem-problem/
+https://www.digitalocean.com/community/tutorials/phpmyadmin-ubuntu-16-04-ru
+
+### Компиляция PHP
+https://github.com/Microsoft/msphpsql/issues/118
+
+### Ангуляр
+https://www.youtube.com/watch?v=kWDVt6zpBbU
+
+
+
+### Чистка и установка MySQL
+http://mainview.ru/raznoe/unix/kak-polnostyu-udalit-mysql-na-ubuntu-10-x-i-sdelat-chistuyu-ustanovku
+
+
+### Переключение и установка php
+https://losst.ru/ustanovka-php-7-v-ubuntu-2
+
+
+### Полное удаление mysql и установка mariadb
+1) sudo apt-get remove mysql-client-core-5.7
+2) sudo apt-get remove mysql-server
+3) sudo apt-get autoremove
+4) Проверяем что осталось dpkg -l | grep mysql
+5) Удаляем, что осталось sudo dpkg --purge [имя пакета]
+6) sudo apt update
+7) sudo apt install mariadb-server mariadb-client
+8) sudo systemctl status mysql
+9) mysql_secure_installation
+10) sudo mysql -uroot -pevg270583
+11) https://losst.ru/ustanovka-mysql-ubuntu-16-04
+
+### Создание дампа MySQL
+mysqldump -uroot -pevg270583 ekf > /home/eandreev/dump/ekf.sql
+
+
+### Компиляция c++
+g++ -Wall -o main main.cpp
+
+
+### Убить процесс в ubuntu
+ps axu | grep <название процесса или программы>
+kill <id процесса>
+
+
+
+### Установка React JS
+$ npm config set prefix /usr/local
+$ sudo npm install -g create-react-app
+$ create-react-app my-app
+

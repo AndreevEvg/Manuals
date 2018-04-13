@@ -1,0 +1,11 @@
+GOPATH="/home/eandreev/home/eandreev/code"
+
+sudo vim ~/.bashrc
+
+/* основное */
+sudo vim ~/.bash_profile
+
+выкл. терминал
+вкл. терминал
+и ввести
+source ~/.bash_profile

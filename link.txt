@@ -1,0 +1,32 @@
+http://www.lifelink.ru/
+https://vk.com/videos-61701623
+
+### Go
+https://vk.com/golangforfun
+http://golang-book.ru/
+
+http://golang-book.ru/chapter-09-structs-and-interfaces.html
+
+### Литература по bash и в целом по Linux - Stack Overflow на русском
+https://ru.stackoverflow.com/questions/23128/%D0%9B%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%B0-%D0%BF%D0%BE-bash-%D0%B8-%D0%B2-%D1%86%D0%B5%D0%BB%D0%BE%D0%BC-%D0%BF%D0%BE-linux
+
+
+### Алгоритмы и структуры данных
+https://www.youtube.com/watch?v=46PypQQDg0k&index=3&list=PLrCZzMib1e9pDxHYzmEzMmnMMUK-dz0_7
+
+### Математика
+https://interneturok.ru/matematika/2-klass
+
+### https://packagist.org
+
+### Расширения Doctrine
+https://packagist.org/packages/beberlei/DoctrineExtensions
+
+
+### Дерево комментариев
+https://www.youtube.com/watch?v=5OnPq01m0ek
+
+
+### yii2 guide
+https://github.com/yiisoft/yii2/tree/master/docs/guide-ru
+
